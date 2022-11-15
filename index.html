@@ -19,20 +19,20 @@
         <div class="jumbotron-fluid jumbotron">
           <h1> Weather Dashboard</h1>
           <h3> Enter any city to get the 5 day forcast of your area! </h3>
-      </div>
-
-
+        </div>
       </header>
+
+      <main>
 
       <div class ="row">
         <div class="col-3 m-2 bg-light">
           <h3>Search for a city</h3>
-          <div class="card">
-            <input id="city-input" type="text" class="form-control"  placeholder="Enter a city">
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button" id="search-button">search
-                <i class="fas fa-search"></i>
-              </button>
+            <div class="flex-column col-3">
+                <form id="city-input" class="card-body">
+                  <input class="form-input" type="text" name="city" id="inputCity" placeholder="Enter a city"/>
+                      <br />
+                  <button type="submit" id="city-input-btn" class="btn btn-outline-secondary">Search</button>
+                </form>
             </div>
 
           </div>
@@ -60,12 +60,16 @@
         <div id="cells" class="row"></div>
       </div>
 
-
+    </main>
 
 
     </body>
 
-
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="assets/js/script.js"></script>
 
 </html>
 
