@@ -16,7 +16,7 @@
   
 
       <header class="container text-center">
-        <div class="jumbotron">
+        <div class="jumbotron-fluid jumbotron">
           <h1> Weather Dashboard</h1>
           <h3> Enter any city to get the 5 day forcast of your area! </h3>
       </div>
@@ -25,12 +25,12 @@
       </header>
 
       <div class ="row">
-        <div class="col-3 m-2 bg-white">
+        <div class="col-3 m-2 bg-light">
           <h3>Search for a city</h3>
           <div class="card">
-            <input type="text" class="form-control" id="city-input">
+            <input id="city-input" type="text" class="form-control"  placeholder="Enter a city">
             <div class="input-group-append">
-              <button class="btn btn-primary" type="button" id="search-button"><ion-icon name=""></ion-icon>
+              <button class="btn btn-primary" type="button" id="search-button">search
                 <i class="fas fa-search"></i>
               </button>
             </div>
@@ -57,7 +57,7 @@
         </div>
                 
 
-        <div id="boxes" class="row"></div>
+        <div id="cells" class="row"></div>
       </div>
 
 
